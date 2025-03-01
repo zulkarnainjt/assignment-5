@@ -47,6 +47,12 @@ function completeButton(button, completeBtn) {
   createParagraph.innerText = `You have completed the task "${completeBtn}" at ${bdTime}`;
   activityMessage.appendChild(createParagraph);
 
+  if (assignedCount - 1 === 0) {
+     alert('Congratulation!!! You Have Completed All The Current Task');
+ }
+
+ 
+
   const clearActivityLog = document.getElementById("all_clear");
   clearActivityLog.addEventListener("click", function () {
     activityMessage.innerHTML = "";
