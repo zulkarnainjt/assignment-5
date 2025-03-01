@@ -29,7 +29,7 @@ function completeButton(button, completeBtn) {
   let navCountPlus = parseInt(navCount.innerText);
   navCount.innerText = navCountPlus + 1;
 
-  button.disable = true;
+  button.disabled = true;
   button.innerText = "Completed";
   button.style.background = "gray";
 
@@ -48,7 +48,7 @@ function completeButton(button, completeBtn) {
   activityMessage.appendChild(createParagraph);
 
   if (assignedCount - 1 === 0) {
-     alert('Congratulation!!! You Have Completed All The Current Task');
+     alert('🎊Congratulation!!! You Have Completed All The Current Task');
  }
 
  
