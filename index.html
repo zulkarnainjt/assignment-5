@@ -16,7 +16,7 @@
         <div class="flex items-center gap-5">
           <div class="flex bg-gray-100 p-2 gap-2 items-center rounded-3xl">
             <img class="w-7 h-7" src="assets/checkbox.png" alt="" />
-            <h1 class="font-bold text-3xl">23</h1>
+            <h1 id="navCount" class="font-bold text-3xl">23</h1>
           </div>
           <div id="theme-btn" class="bg-gray-100 p-2 rounded-full">
             <img  src="assets/theme-btn.png" alt="" />
@@ -34,7 +34,7 @@
               </div>
               <div>
                 <p class="text-gray-600 font-semibold">Task Assigned</p>
-                <h2 class="text-2xl font-bold">6</h2>
+                <h2 id="assigned-task" class="text-2xl font-bold">6</h2>
               </div>
             </div>
             <div
@@ -64,7 +64,7 @@
                   <p class="text-gray-500 text-sm font-semibold">Deadline</p>
                   <p class="font-bold">21 March 2025</p>
                 </div>
-                <button id="complete-btn"
+                <button id="complete-btn" onclick="completeButton(this, 'Fix Mobile Button Issue')"
                   class="bg-gradient-to-r from-indigo-500 to-indigo-400 font-semibold text-white rounded-lg text-xl px-4 py-2"
                 >
                   Completed
@@ -83,7 +83,7 @@
                   <p class="text-gray-500 text-sm font-semibold">Deadline</p>
                   <p class="font-bold">21 March 2025</p>
                 </div>
-                <button id="complete-btn"
+                <button id="complete-btn" onclick="completeButton(this, 'Add Dark Mode')"
                   class="bg-gradient-to-r from-indigo-500 to-indigo-400 font-semibold text-white rounded-lg text-xl px-4 py-2"
                 >
                   Completed
@@ -102,7 +102,7 @@
                   <p class="text-gray-500 text-sm font-semibold">Deadline</p>
                   <p class="font-bold">21 March 2025</p>
                 </div>
-                <button id="complete-btn"
+                <button id="complete-btn" onclick="completeButton(this, 'Optimize Home page')"
                   class="bg-gradient-to-r from-indigo-500 to-indigo-400 font-semibold text-white rounded-lg text-xl px-4 py-2"
                 >
                   Completed
@@ -121,7 +121,7 @@
                   <p class="text-gray-500 text-sm font-semibold">Deadline</p>
                   <p class="font-bold">21 March 2025</p>
                 </div>
-                <button id="complete-btn"
+                <button id="complete-btn" onclick="completeButton(this, 'Add new emoji 🤲')"
                   class="bg-gradient-to-r from-indigo-500 to-indigo-400 font-semibold text-white rounded-lg text-xl px-4 py-2"
                 >
                   Completed
@@ -140,7 +140,7 @@
                   <p class="text-gray-500 text-sm font-semibold">Deadline</p>
                   <p class="font-bold">21 March 2025</p>
                 </div>
-                <button id="complete-btn"
+                <button id="complete-btn" onclick="completeButton(this, 'Integrate OpenAI API')"
                   class="bg-gradient-to-r from-indigo-500 to-indigo-400 font-semibold text-white rounded-lg text-xl px-4 py-2"
                 >
                   Completed
@@ -159,7 +159,7 @@
                   <p class="text-gray-500 text-sm font-semibold">Deadline</p>
                   <p class="font-bold">21 March 2025</p>
                 </div>
-                <button id="complete-btn"
+                <button id="complete-btn" onclick="completeButton(this, 'Improve Job searching')"
                   class="bg-gradient-to-r from-indigo-500 to-indigo-400 font-semibold text-white rounded-lg text-xl px-4 py-2"
                 >
                   Completed
@@ -174,9 +174,12 @@
             <h3 class="text-lg mb-4">Activity Log</h3>
           </div>
           <div>
-            <button class="bg-blue-600 text-white px-4 py-2 mt-3 rounded-lg mb-4">
+            <button id="all_clear" class="bg-blue-600 text-white px-4 py-2 mt-3 rounded-lg mb-4">
               Clear History
             </button>
+          </div>
+          <div id="activityMessage" class="text-start space-y-5 font-semibold">
+
           </div>
         </div>
       </div>
