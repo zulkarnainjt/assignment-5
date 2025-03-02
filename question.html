@@ -14,8 +14,9 @@
           <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
         </div>
         <div>
-          <button id="back-btn" 
-            class="bg-purple-700 text-white text-xl px-3 py-3 mt-3 rounded-lg mb-4 font-semibold"
+          <button
+            id="back-btn"
+            class="bg-blue-700 hover:bg-black text-white text-xl px-3 py-3 mt-3 rounded-lg mb-4 font-semibold"
           >
             Back To Desk
           </button>
@@ -60,7 +61,8 @@
           </h2>
         </div>
         <p class="text-gray-700 font-semibold">
-          Event Delegation হলো এমন একটি টেকনিক যেখানে আমরা কোনো parent এলিমেন্টের মাধ্যমে তার child এলিমেন্টগুলোর ইভেন্ট হ্যান্ডল করি।
+          Event Delegation হলো এমন একটি টেকনিক যেখানে আমরা কোনো parent
+          এলিমেন্টের মাধ্যমে তার child এলিমেন্টগুলোর ইভেন্ট হ্যান্ডল করি।
         </p>
       </div>
       <div class="p-5 bg-white mt-5 rounded-lg space-y-5">
@@ -69,28 +71,33 @@
             Question-4: What is event bubbling in the DOM?
           </h2>
         </div>
-        <p class="text-gray-700 font-semibold">
-          দুঃখিত আমার সঠিক মনে নেই
-
-        </p>
+        <p class="text-gray-700 font-semibold">দুঃখিত আমার সঠিক মনে নেই</p>
       </div>
       <div class="p-5 bg-white mt-5 rounded-lg space-y-5">
         <div class="shadow p-3">
           <h2 class="font-semibold text-2xl">
-            Question-5: How do you create, add, and remove elements using JavaScript?
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
           </h2>
         </div>
         <p class="text-gray-700 font-semibold">
-         1. document.createElement() <-- নতুন এলিমেন্ট তৈরি করার জন্য এটি ব্যাবহার করা হয়, 
-         <br/>
-         2.  DOM-এ এলিমেন্ট যোগ করার জন্য --> appendChild() ব্যাবহার করা হয়,
-         <br>
-         3. DOM থেকে এলিমেন্ট করার জন্য করা হয়  remove removeChild(),
+          1. document.createElement() <-- নতুন এলিমেন্ট তৈরি করার জন্য এটি
+          ব্যাবহার করা হয়,
+          <br />
+          2. DOM-এ এলিমেন্ট যোগ করার জন্য --> appendChild() ব্যাবহার করা হয়,
+          <br />
+          3. DOM থেকে এলিমেন্ট করার জন্য করা হয় remove removeChild(),
         </p>
       </div>
     </section>
-    
-    <script src="script/click.js"></script>
+    <script>
+      document
+        .getElementById("back-btn")
+        .addEventListener("click", function () {
+          window.location.href = "index.html";
+        });
+    </script>
+
     <script src="script/question.js"></script>
   </body>
 </html>

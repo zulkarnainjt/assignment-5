@@ -7,13 +7,14 @@ const colors = [
   "#1ffcd7",
   "#44fd09",
   "#e3f2de",
+  "#4f006b",
+  "#6c0227"
 ];
 let colorIndex = 0;
 document.getElementById("theme-btn").addEventListener("click", function () {
   document.body.style.background = colors[colorIndex];
   colorIndex = (colorIndex + 1) % colors.length;
 });
-
 
 function completeButton(button, completeBtn) {
   if (button.disabled) return;
@@ -48,14 +49,11 @@ function completeButton(button, completeBtn) {
   activityMessage.appendChild(createParagraph);
 
   if (assignedCount - 1 === 0) {
-     alert('🎊Congratulation!!! You Have Completed All The Current Task');
- }
-
- 
+    alert("🎊Congratulation!!! You Have Completed All The Current Task");
+  }
 
   const clearActivityLog = document.getElementById("all_clear");
   clearActivityLog.addEventListener("click", function () {
     activityMessage.innerHTML = "";
   });
-
 }
