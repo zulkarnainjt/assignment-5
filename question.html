@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Question-Answer</title>
-     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-</head>
-<body class="w-5/6 mx-auto bg-gray-100">
-     
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question-Answer</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="w-5/6 mx-auto bg-gray-100">
+    <header class="p-4">
+      <nav class="bg-white rounded-2xl flex justify-between items-center p-4">
+        <div class="flex items-center gap-2">
+          <img src="assets/logo.png" alt="" />
+          <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+        </div>
+        <div>
+          <button id="back-btn" 
+            class="bg-purple-700 text-white text-xl px-3 py-3 mt-3 rounded-lg mb-4 font-semibold"
+          >
+            Back To Desk
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="mb-20">
+      <h1 class="text-center font-bold text-2xl mt-3">Blogs</h1>
+      <div class="p-5 bg-white mt-5 rounded-lg space-y-5">
+        <div class="shadow p-3">
+          <h2 class="font-semibold text-2xl">
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </h2>
+        </div>
+        <p class="text-gray-700 font-semibold">
+          There are many ways to select elements in the DOM using JavaScript: 1.
+          By ID, 2. By Class Name, 4. By Name Attribute, 5. Query Selector,
+          "when select multiple element then use-->" querySelectorAll().
+        </p>
+      </div>
+      <div class="p-5 bg-white mt-5 rounded-lg space-y-5">
+        <div class="shadow p-3">
+          <h2 class="font-semibold text-2xl">
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent ?
+          </h2>
+        </div>
+        <p class="text-gray-700 font-semibold">
+          innerHTML, innerText, এবং textContent এর পার্থক্য দেওয়া হলো- 1.
+          innerHTML --> HTML ট্যাগসহ সম্পূর্ণ কনটেন্ট রিটার্ন করে বা সেট করে,
+          <br />
+          2. innerText --> শুধু Visible টেক্সট রিটার্ন করে বা সেট করে, <br />
+          3. textContent --> সম্পূর্ণ টেক্সট রিটার্ন করে.
+        </p>
+      </div>
+      <div class="p-5 bg-white mt-5 rounded-lg space-y-5">
+        <div class="shadow p-3">
+          <h2 class="font-semibold text-2xl">
+            Question-3: What is event delegation in the DOM?
+          </h2>
+        </div>
+        <p class="text-gray-700 font-semibold">
+          Event Delegation হলো এমন একটি টেকনিক যেখানে আমরা কোনো parent এলিমেন্টের মাধ্যমে তার child এলিমেন্টগুলোর ইভেন্ট হ্যান্ডল করি।
+        </p>
+      </div>
+      <div class="p-5 bg-white mt-5 rounded-lg space-y-5">
+        <div class="shadow p-3">
+          <h2 class="font-semibold text-2xl">
+            Question-4: What is event bubbling in the DOM?
+          </h2>
+        </div>
+        <p class="text-gray-700 font-semibold">
+          দুঃখিত আমার সঠিক মনে নেই
+
+        </p>
+      </div>
+      <div class="p-5 bg-white mt-5 rounded-lg space-y-5">
+        <div class="shadow p-3">
+          <h2 class="font-semibold text-2xl">
+            Question-5: How do you create, add, and remove elements using JavaScript?
+          </h2>
+        </div>
+        <p class="text-gray-700 font-semibold">
+         1. document.createElement() <-- নতুন এলিমেন্ট তৈরি করার জন্য এটি ব্যাবহার করা হয়, 
+         <br/>
+         2.  DOM-এ এলিমেন্ট যোগ করার জন্য --> appendChild() ব্যাবহার করা হয়,
+         <br>
+         3. DOM থেকে এলিমেন্ট করার জন্য করা হয়  remove removeChild(),
+        </p>
+      </div>
+    </section>
+    
+    <script src="script/click.js"></script>
+    <script src="script/question.js"></script>
+  </body>
 </html>

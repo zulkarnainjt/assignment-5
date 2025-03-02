@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev Board</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    
+
     <style>
-      #activityMessage > p{
+      #activityMessage > p {
         background-color: rgb(245, 241, 241);
         border-radius: 10px;
         padding: 10px;
       }
     </style>
-
   </head>
   <body class="w-5/6 mx-auto bg-gray-100">
     <header class="p-4">
@@ -28,7 +27,7 @@
             <h1 id="navCount" class="font-bold text-3xl">23</h1>
           </div>
           <div id="theme-btn" class="bg-gray-100 p-2 rounded-full">
-            <img  src="assets/theme-btn.png" alt="" />
+            <img src="assets/theme-btn.png" alt="" />
           </div>
         </div>
       </nav>
@@ -46,7 +45,7 @@
                 <h2 id="assigned-task" class="text-2xl font-bold">6</h2>
               </div>
             </div>
-            <div
+            <div id="question-btn"
               class="text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-400 p-4 rounded-lg flex items-center px-14 gap-6"
             >
               <img src="assets/board.png" alt="" />
@@ -61,7 +60,7 @@
             </div>
           </div>
           <div class="grid grid-cols-3 gap-6">
-            <div class="bg-gray-100 p-6 rounded-lg">
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
               <p class="rounded-lg w-24 px-2 py-1 mb-5 bg-white">Shop Ease</p>
               <h3 class="text-2xl font-semibold">Fix Mobile Button Issue</h3>
               <p class="text-gray-400 text-sm mt-5 p-2 bg-white rounded-lg">
@@ -73,14 +72,16 @@
                   <p class="text-gray-500 text-sm font-semibold">Deadline</p>
                   <p class="font-bold">21 March 2025</p>
                 </div>
-                <button id="complete-btn" onclick="completeButton(this, 'Fix Mobile Button Issue')"
+                <button
+                  id="complete-btn"
+                  onclick="completeButton(this, 'Fix Mobile Button Issue')"
                   class="bg-gradient-to-r from-indigo-500 to-indigo-400 font-semibold text-white rounded-lg text-xl px-4 py-2"
                 >
                   Completed
                 </button>
               </div>
             </div>
-            <div class="bg-gray-100 p-6 rounded-lg">
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
               <p class="rounded-lg w-24 px-2 py-1 mb-5 bg-white">CloudSync</p>
               <h3 class="text-2xl font-semibold">Add Dark Mode</h3>
               <p class="text-gray-400 text-sm mt-5 p-2 bg-white rounded-lg">
@@ -92,14 +93,16 @@
                   <p class="text-gray-500 text-sm font-semibold">Deadline</p>
                   <p class="font-bold">21 March 2025</p>
                 </div>
-                <button id="complete-btn" onclick="completeButton(this, 'Add Dark Mode')"
+                <button
+                  id="complete-btn"
+                  onclick="completeButton(this, 'Add Dark Mode')"
                   class="bg-gradient-to-r from-indigo-500 to-indigo-400 font-semibold text-white rounded-lg text-xl px-4 py-2"
                 >
                   Completed
                 </button>
               </div>
             </div>
-            <div class="bg-gray-100 p-6 rounded-lg">
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
               <p class="rounded-lg w-24 px-2 py-1 mb-5 bg-white">SwiftPay</p>
               <h3 class="text-2xl font-semibold">Optimize Home page </h3>
               <p class="text-gray-400 text-sm mt-5 p-2 bg-white rounded-lg">
@@ -111,14 +114,16 @@
                   <p class="text-gray-500 text-sm font-semibold">Deadline</p>
                   <p class="font-bold">21 March 2025</p>
                 </div>
-                <button id="complete-btn" onclick="completeButton(this, 'Optimize Home page')"
+                <button
+                  id="complete-btn"
+                  onclick="completeButton(this, 'Optimize Home page')"
                   class="bg-gradient-to-r from-indigo-500 to-indigo-400 font-semibold text-white rounded-lg text-xl px-4 py-2"
                 >
                   Completed
                 </button>
               </div>
             </div>
-            <div class="bg-gray-100 p-6 rounded-lg">
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
               <p class="rounded-lg w-24 px-2 py-1 mb-5 bg-white">Meta</p>
               <h3 class="text-2xl font-semibold">Add new emoji 🤲</h3>
               <p class="text-gray-400 text-sm mt-5 p-2 bg-white rounded-lg">
@@ -130,14 +135,16 @@
                   <p class="text-gray-500 text-sm font-semibold">Deadline</p>
                   <p class="font-bold">21 March 2025</p>
                 </div>
-                <button id="complete-btn" onclick="completeButton(this, 'Add new emoji 🤲')"
+                <button
+                  id="complete-btn"
+                  onclick="completeButton(this, 'Add new emoji 🤲')"
                   class="bg-gradient-to-r from-indigo-500 to-indigo-400 font-semibold text-white rounded-lg text-xl px-4 py-2"
                 >
                   Completed
                 </button>
               </div>
             </div>
-            <div class="bg-gray-100 p-6 rounded-lg">
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
               <p class="rounded-lg w-28 px-2 py-1 mb-5 bg-white">Google LLC</p>
               <h3 class="text-2xl font-semibold">Integrate OpenAI API</h3>
               <p class="text-gray-400 text-sm mt-5 p-2 bg-white rounded-lg">
@@ -149,14 +156,16 @@
                   <p class="text-gray-500 text-sm font-semibold">Deadline</p>
                   <p class="font-bold">21 March 2025</p>
                 </div>
-                <button id="complete-btn" onclick="completeButton(this, 'Integrate OpenAI API')"
+                <button
+                  id="complete-btn"
+                  onclick="completeButton(this, 'Integrate OpenAI API')"
                   class="bg-gradient-to-r from-indigo-500 to-indigo-400 font-semibold text-white rounded-lg text-xl px-4 py-2"
                 >
                   Completed
                 </button>
               </div>
             </div>
-            <div class="bg-gray-100 p-6 rounded-lg">
+            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
               <p class="rounded-lg w-24 px-2 py-1 mb-5 bg-white">Glassdoar</p>
               <h3 class="text-2xl font-semibold">Improve Job searching</h3>
               <p class="text-gray-400 text-sm mt-5 p-2 bg-white rounded-lg">
@@ -168,7 +177,9 @@
                   <p class="text-gray-500 text-sm font-semibold">Deadline</p>
                   <p class="font-bold">21 March 2025</p>
                 </div>
-                <button id="complete-btn" onclick="completeButton(this, 'Improve Job searching')"
+                <button
+                  id="complete-btn"
+                  onclick="completeButton(this, 'Improve Job searching')"
                   class="bg-gradient-to-r from-indigo-500 to-indigo-400 font-semibold text-white rounded-lg text-xl px-4 py-2"
                 >
                   Completed
@@ -179,21 +190,26 @@
         </div>
         <div class="bg-white p-6 rounded-lg text-center">
           <div class="flex gap-5 justify-center">
-            <div><img src="assets/activity.png" alt=""></div>
+            <div><img src="assets/activity.png" alt="" /></div>
             <h3 class="text-lg mb-4">Activity Log</h3>
           </div>
           <div>
-            <button id="all_clear" class="bg-blue-600 text-white px-4 py-2 mt-3 rounded-lg mb-4">
+            <button
+              id="all_clear"
+              class="bg-blue-600 text-white px-4 py-2 mt-3 rounded-lg mb-4"
+            >
               Clear History
             </button>
           </div>
-          <div id="activityMessage" class="text-start space-y-5 font-semibold">
-
-          </div>
+          <div
+            id="activityMessage"
+            class="text-start space-y-5 font-semibold"
+          ></div>
         </div>
       </div>
     </section>
 
+    <script src="script/question.js"></script>
     <script src="script/click.js"></script>
   </body>
 </html>
